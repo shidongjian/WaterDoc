@@ -112,3 +112,33 @@ ResponseBody:
     "data": {}
 }
 ```
+
+### 修改用户节点
+url: /UserNodeController/updateUserNode
+请求方法: put
+
+RequestBody:
+
+|参数名|参数类型|是否必填|备注|
+|-----|-----|-----|-----|
+|nodeId|string|是|节点Id|
+|nodeNumber|string|是|节点编号|
+|nodeName|string|是|节点名称|
+|nodeMac|string|是|节点地址|
+|nodeHeartBeat|string|是|心跳包，默认为1|
+|nodeDb|string|是|增益放大倍数，默认为1|
+|nodeMiddleHz|string|是|中值频率，默认为00|
+|nodeDb2|string|是|2路信号增益放大倍数，默认为1|
+|nodeMiddleHz2|string|是|2路信号中值频率，默认为00|
+|analysisId|string|是|分析序列号，默认为1|
+|nodeRemark|string|否|节点备注信息|
+
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {}
+}
+```
