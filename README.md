@@ -1,7 +1,7 @@
 ## BaseUrl: 139.9.211.248:8040
 ## 用户相关
 ### 用户登陆
-url :     /index/dologin
+url :     /index/dologin？username=#{username}&password=#{password}
 请求方法:  get
 
 RequestBody:
@@ -36,6 +36,39 @@ RequestBody:
 
 |参数名|参数类型|是否必填|备注|
 |-----|-----|-----|-----|
+|userName|string|是|用户名|
+|userPassoword|string|是|用户密码|
+|userPhone|string|是|手机号|
+|userEmail|string|是|邮箱|
+|userRemark|string|否|备注|
+
+ResponseBody:
+```json
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {
+        "user": {
+            "userId": "324010869689670173470127425348768",
+            "userName": "zhangsan",
+            "userPassword": "123456",
+            "userPhone": "123456",
+            "userEmail": "546725246@qq.com",
+            "userRemark": ""
+        }
+    }
+}
+```
+
+### 修改用户
+url :     /UserController/updateUser
+请求方法:  put
+
+RequestBody:
+
+|参数名|参数类型|是否必填|备注|
+|-----|-----|-----|-----|
+|userId|string|是|用户ID|
 |userName|string|是|用户名|
 |userPassoword|string|是|用户密码|
 |userPhone|string|是|手机号|
