@@ -94,15 +94,8 @@ ResponseBody:
 
 ### 删除用户节点
 
-url: /UserNodeController/deleteUserNode
+url: /UserNodeController/deleteUserNode?userId=#{userId}&nodeId=#{nodeId}
 请求方法：delete
-
-RequestBody:
-
-|参数名|参数类型|是否必填|备注|
-|-----|-----|-----|-----|
-|userId|string|是|用户ID|
-|nodeId|string|是|节点ID|
 
 ResponseBody:
 ```
@@ -140,5 +133,40 @@ ResponseBody:
     "message": "Ok",
     "code": 200,
     "data": {}
+}
+```
+
+### 查询用户节点
+url: /UserNodeController/getUserNode？userId=#{userId}
+请求方法: get
+
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {
+        "nodes": [
+            {
+                "nodeId": "612841076180541734182459943747570007",
+                "nodeNumber": "2号节点",
+                "nodeName": "1号节点",
+                "nodeLastCommandId": "1",
+                "nodeCommandId": "1",
+                "nodeStateId": "612841076180541734182459943747570007",
+                "nodeRemark": "123",
+                "analysisId": "1",
+                "nodeMac": "0007",
+                "nodeMiddleHz": "00",
+                "nodeDb": "332",
+                "nodeMiddleHz2": null,
+                "nodeDb2": null,
+                "nodeLastMac": null,
+                "nodeHeartBeat": "1",
+                "receive": false
+            }
+        ]
+    }
 }
 ```
