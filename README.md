@@ -137,7 +137,7 @@ ResponseBody:
 ```
 
 ### 查询用户节点
-url: /UserNodeController/getUserNode？userId=#{userId}
+url: /UserNodeController/getUserNode?userId=#{userId}
 请求方法: get
 
 
