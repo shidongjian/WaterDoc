@@ -62,7 +62,7 @@ ResponseBody:
 
 ## 节点相关
 
-### 添加一个节点
+### 添加用户节点
 url: /UserNodeController/addUserNode
 请求方法: post
 
@@ -81,3 +81,34 @@ RequestBody:
 |nodeMiddleHz2|string|是|2路信号中值频率，默认为00|
 |analysisId|string|是|分析序列号，默认为1|
 |nodeRemark|string|否|节点备注信息|
+
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {}
+}
+```
+
+### 删除用户节点
+
+url: /UserNodeController/deleteUserNode
+请求方法：delete
+
+RequestBody:
+
+|参数名|参数类型|是否必填|备注|
+|-----|-----|-----|-----|
+|userId|string|是|用户ID|
+|nodeId|string|是|节点ID|
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {}
+}
+```
