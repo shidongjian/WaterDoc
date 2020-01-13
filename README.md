@@ -1,7 +1,7 @@
 ## BaseUrl: 139.9.211.248:8040
 ## 用户相关
 ### 用户登陆
-url :     /index/dologin？username=#{username}&password=#{password}
+url :     /index/dologin?username=#{username}&password=#{password}
 请求方法:  get
 
 RequestBody:
