@@ -203,3 +203,19 @@ ResponseBody:
     }
 }
 ```
+
+## 数据分析
+
+### 新建一次分析
+
+url: /analysisController/analysis
+请求方法: post
+
+RequestBody:
+
+|参数名|参数类型|是否必填|备注|
+|-----|-----|-----|-----|
+|userId|string|是|用户ID|
+|analysisDescribe|string|是|分析描述|
+|analysisRemark|string|是|分析备注|
+|nodeId|string[]|是|节点ID列表|
