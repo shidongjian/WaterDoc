@@ -219,3 +219,64 @@ RequestBody:
 |analysisDescribe|string|是|分析描述|
 |analysisRemark|string|是|分析备注|
 |nodeId|string[]|是|节点ID列表|
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {}
+}
+```
+
+### 查询全部分析
+
+url: /analysisController/analysis?userId=#{userId}
+请求方法: get
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {
+        "analysisList": [
+            {
+                "analysisId": "134040503430573173481601784302730",
+                "analysisDescribe": "无数",
+                "analysisRemark": "haha",
+                "userId": "admin",
+                "analysisCreateTime": 1578885021000
+            },
+            {
+                "analysisId": "145261988552352173477682116675517",
+                "analysisDescribe": "无数",
+                "analysisRemark": "haha",
+                "userId": "admin",
+                "analysisCreateTime": 1578896242000
+            },
+            {
+                "analysisId": "6063538699153800173495521454588247",
+                "analysisDescribe": "A0",
+                "analysisRemark": "校验",
+                "userId": "admin",
+                "analysisCreateTime": 1574318714000
+            }
+        ]
+    }
+}
+```
+
+### 删除一次分析
+url: /analysisController/analysis?analysisId=#{analysisId}
+请求方法:delete
+
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {}
+}
+```
