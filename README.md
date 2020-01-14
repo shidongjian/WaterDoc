@@ -280,3 +280,37 @@ ResponseBody:
     "data": {}
 }
 ```
+
+### 查询一次分析下的全部节点
+url: /analysisNodeController/analysisNode?analysisId=134040503430573173481601784302730
+请求方法:get
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {
+        "nodeList": [
+            {
+                "nodeId": "612841076180541734182459943747570007",
+                "nodeNumber": "2号节点",
+                "nodeName": "1号节点",
+                "nodeLastCommandId": "1",
+                "nodeCommandId": "1",
+                "nodeStateId": "612841076180541734182459943747570007",
+                "nodeRemark": "123",
+                "analysisId": "145261988552352173477682116675517",
+                "nodeMac": "0007",
+                "nodeMiddleHz": "00",
+                "nodeDb": "332",
+                "nodeMiddleHz2": null,
+                "nodeDb2": null,
+                "nodeLastMac": null,
+                "nodeHeartBeat": "1",
+                "receive": false
+            }
+        ]
+    }
+}
+```
