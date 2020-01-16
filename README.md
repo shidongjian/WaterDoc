@@ -314,3 +314,16 @@ ResponseBody:
     }
 }
 ```
+
+### 结束一次分析
+url: /analysisController/analysis?analysisId=#{analysisId}
+请求方法 :put
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {}
+}
+```
