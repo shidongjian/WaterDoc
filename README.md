@@ -70,7 +70,7 @@ RequestBody:
 |-----|-----|-----|-----|
 |userId|string|是|用户ID|
 |userName|string|是|用户名|
-|userPassoword|string|是|用户密码|
+|userPassword|string|是|用户密码|
 |userPhone|string|是|手机号|
 |userEmail|string|是|邮箱|
 |userRemark|string|否|备注|
