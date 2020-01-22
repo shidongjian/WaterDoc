@@ -231,6 +231,7 @@ ResponseBody:
 
 ### 查询全部分析
 
+analysisStatus: false 表明这次分析是历史分析，true代表是正在进行的分析
 url: /analysisController/analysis?userId=#{userId}
 请求方法: get
 
