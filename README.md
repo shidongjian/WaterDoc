@@ -155,9 +155,10 @@ RequestBody:
 |nodeDb|string|是|增益放大倍数，默认为1|
 |nodeMiddleHz|string|是|中值频率，默认为00|
 |nodeDb2|string|是|2路信号增益放大倍数，默认为1|
-|nodeMiddleHz2|string|是|2路信号中值频率，默认为00|
-|analysisId|string|是|分析序列号，默认为1|
+|nodeMiddleHz2|string|否|2路信号中值频率，默认为00|
+|analysisId|string|否|分析序列号，默认为1|
 |nodeRemark|string|否|节点备注信息|
+|nodeCommandId|string|否|节点开关信息，0是关，1是开|
 
 
 ResponseBody:
