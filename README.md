@@ -241,26 +241,21 @@ ResponseBody:
     "code": 200,
     "data": {
         "analysisList": [
-            {
+             {
                 "analysisId": "134040503430573173481601784302730",
-                "analysisDescribe": "无数",
+                "analysisName": null,
                 "analysisRemark": "haha",
+                "analysisStatus": false,
                 "userId": "admin",
                 "analysisCreateTime": 1578885021000
             },
             {
                 "analysisId": "145261988552352173477682116675517",
-                "analysisDescribe": "无数",
+                "analysisName": null,
                 "analysisRemark": "haha",
+                "analysisStatus": false,
                 "userId": "admin",
                 "analysisCreateTime": 1578896242000
-            },
-            {
-                "analysisId": "6063538699153800173495521454588247",
-                "analysisDescribe": "A0",
-                "analysisRemark": "校验",
-                "userId": "admin",
-                "analysisCreateTime": 1574318714000
             }
         ]
     }
