@@ -324,3 +324,20 @@ ResponseBody:
     "data": {}
 }
 ```
+
+### 查询能量图
+url: /nodedatacontroller/getnodedataAPP?analysisId=1465347589289694173468441136621400&startDate=2019-01-01 00:00:00&endDate=2021-01-01 00:00:00&nodeId=0010&tag=energy&interval=100000000&isHistory=false
+请求方法:get
+
+ResponseBody:
+```
+{
+    "message": "Ok",
+    "code": 200,
+    "data": {
+        "data": [
+            2810
+        ]
+    }
+}
+```
